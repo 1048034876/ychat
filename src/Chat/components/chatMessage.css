@@ -1,0 +1,132 @@
+.chat-message-right {
+    height: auto;
+    width: auto;
+    padding: 5px;
+}
+
+.chat-message-right .chat-message-text {
+    text-align: right;
+}
+
+.chat-message-right .chat-message-text-group>.chat-message-content {
+    text-align: left;
+    position: relative;
+    clear: both;
+    right: 10px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-right: 10px;
+    background: #0079cc;
+    color: #fff;
+    border-radius: 3px;
+    min-height: 30px;
+    width: inherit;
+    white-space: pre-wrap;       /* css-3 */ 
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */ 
+    white-space: -pre-wrap;      /* Opera 4-6 */ 
+    white-space: -o-pre-wrap;    /* Opera 7 */ 
+    word-wrap: break-word;
+}
+
+.chat-message-right .chat-message-text-group>.chat-message-content:after {
+    content: '';
+    position: absolute;
+    right: -13px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-left: 7px solid #0079cc;
+}
+
+.chat-message-right .chat-message-photo {
+    height: 40px;
+    width: 40px;
+}
+
+.chat-message-right .chat-message-photo>img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.chat-message-left {
+    height: auto;
+    width: auto;
+    padding: 5px;
+}
+
+.chat-message-left .chat-message-text {
+    text-align: left;
+}
+
+.chat-message-left .chat-message-text-group>.chat-message-content {
+    clear: both;
+    position: relative;
+    left: 10px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-left: 10px;
+    background: #10893e;
+    color: #fff;
+    border-radius: 3px;
+    min-height: 30px;
+    width: inherit;
+    white-space: pre-wrap;       /* css-3 */ 
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */ 
+    white-space: -pre-wrap;      /* Opera 4-6 */ 
+    white-space: -o-pre-wrap;    /* Opera 7 */ 
+    word-wrap: break-word;
+}
+
+.chat-message-left .chat-message-text-group>.chat-message-content:before {
+    content: '';
+    position: absolute;
+    left: -13px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #10893e;
+}
+
+.chat-message-left .chat-message-photo {
+    height: 40px;
+    width: 40px;
+}
+
+.chat-message-left .chat-message-photo>img {
+    height: 100%;
+    width: 100%;
+}
+
+.icon-messageStatus-right,
+.icon-messageStatus-left {
+    position: relative;
+}
+.icon-messageStatus-right {
+    right: 20px;
+}
+.icon-messageStatus-left {
+    left: 20px;
+}
+
+.icon-messageStatus-right.successed,
+.icon-messageStatus-left.successed {
+    color: green;
+}
+
+.icon-messageStatus-right.failed, 
+.icon-messageStatus-left.failed {
+    color: red;
+}
+
+.icon-messageStatus-right.loading
+.icon-messageStatus-left.loading {
+
+}

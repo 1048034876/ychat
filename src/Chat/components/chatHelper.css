@@ -1,0 +1,27 @@
+.chatHelper {
+    position: fixed;
+    float: right;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    background: #ccc;
+    cursor: pointer;
+}
+
+
+.hint {
+    position: relative;
+    top: -50px;
+    left: 0px;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    line-height: 25px;
+    background: #F0F0F0;
+    color: #aaa;
+    opacity: 0.8;
+}

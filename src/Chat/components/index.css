@@ -1,0 +1,24 @@
+.chats {
+    position: fixed;
+    z-index: 999;
+    top: 20px;
+    left: 0;
+    height: 500px;
+    width: 802px;
+    background: #f5f4f2;
+    border: 1px solid #d9d9d9;
+    border-radius: 7px;
+}
+
+.ant-tabs-bar {
+    margin: 0;
+}
+
+.chats-icon-operations {
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+ .chats-icon-operations i {
+    font-size: 23px;
+}

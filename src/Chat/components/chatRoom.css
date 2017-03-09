@@ -1,0 +1,54 @@
+.chat-house {
+    height: 450px;
+    width: 800px;
+}
+
+.chat-header {
+    height: 6%;
+    background: #0079cc;
+    margin-top: -16px;
+}
+
+.chat-title {
+    padding: 0 0 0 10px;
+    color: #fff;
+    font-size: 16px;
+}
+.chat-close-icon {
+    position: relative;
+    right: 8px;
+    top: 5px;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+}
+.chat-close-icon:hover {
+    color: #c4c4c4;
+}
+
+.chat-body {
+    height: 76%;
+    padding: 10px;
+    background: #f5f4f2;
+}
+
+.chat-messages {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.chat-footer {
+    height: 24%;
+    padding: 5px;
+    background: #f5f4f2;
+    border-radius: 0 0 7px 7px;
+}
+.chat-input-group {
+    text-align: right;
+}
+.chat-input {
+    margin: 10px 0;
+}
+.chat-submit {
+    text-align: right;
+}
