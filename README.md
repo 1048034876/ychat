@@ -7,4 +7,4 @@
 <br>
 示例
 ----
-![image](https://github.com/yehq/ychat/public/images/sl.jpg)
+![image](https://github.com/yehq/ychat/blob/master/images/sl.png)
