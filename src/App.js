@@ -33,82 +33,18 @@ class App extends Component {
       <div className="App">
         <div className="">
           <Chat current={user_1} rooms={{
-            roomId: {
-            messages: [
-              {
-                  userId: 1, 
-                  content: '123123', 
-                  isRead: 0,
-                  sendStatus: constants.sendStatus.SUCCESSED
-              }
-            ],
-            target: user_2,
-            show: false
-          },
-          '12312': {
-            messages: [
-              {
-                  userId: 1, 
-                  content: 'qq', 
-                  isRead: 0,
-                  sendStatus: constants.sendStatus.SUCCESSED
-              }
-            ],
-            target: user_3,
-            show: false
-          },
-          '3333': {
-            messages: [
-              {
-                  userId: 1, 
-                  content: '3333', 
-                  isRead: 0,
-                  sendStatus: constants.sendStatus.SUCCESSED
-              }
-            ],
-            target: user_4,
-            show: false
-          },
+            '3333': {
+              messages: [],
+              target: user_2,
+            },
           }}></Chat>
 
 
           <Chat chatHelperStyle={{top: '150px'}} current={user_2} rooms={{
-            roomId: {
-            messages: [
-              {
-                  userId: 1, 
-                  content: '123123', 
-                  isRead: 0,
-                  sendStatus: constants.sendStatus.SUCCESSED
-              }
-            ],
-            target: user_1,
-            show: false
-          },
-          '12312': {
-            messages: [
-              {
-                  userId: 1, 
-                  content: 'qq', 
-                  isRead: 0,
-                  sendStatus: constants.sendStatus.SUCCESSED
-              }
-            ],
-            target: user_3,
-            show: false
-          },
-          '3333': {
-            messages: [
-              {
-                  userId: 1, 
-                  content: '3333', 
-                  isRead: 0,
-                  sendStatus: constants.sendStatus.SUCCESSED
-              }
-            ],
-            target: user_4,
-            show: false
-          },
+            '3333': {
+              messages: [],
+              target: user_1,
+            },
           }}></Chat>
         </div>
         

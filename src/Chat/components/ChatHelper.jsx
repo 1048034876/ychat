@@ -3,6 +3,7 @@ import { Row, Col, Icon, Button, Input } from 'antd';
 import ChatActions from '../actions/ChatActions';
 import styles from './chatHelper.css';
 import constants from '../actions/constants';
+import Draggabilly from 'draggabilly';
 
 const chatActions = new ChatActions();
 
@@ -21,7 +22,10 @@ class ChatHelper extends Component {
   }
 
   componentDidMount() {
-		// $('#chatHelper').draggable();
+    const eles = document.getElementsByClassName('chatHelper');
+    for (let e of eles) {
+      new Draggabilly(e);
+    }
   }
 
   renderByConnectionState = (connectionState) => {
@@ -74,8 +78,9 @@ class ChatHelper extends Component {
 		const { connectionState, style } = this.props;
 		return (
 			<div id="chatHelper" 
+        className='chatHelper'
         style={style}
-        onClick={this.onClickByConnectionState(connectionState)} className='chatHelper'
+        onClick={this.onClickByConnectionState(connectionState)} 
         onMouseOver={() => {
           this.setState({showHint: true});
         }}

@@ -78,7 +78,7 @@ export default class stateActions {
 
 	pushMessage(state, payload) {
 		const { roomId, message } = payload;
-		state.rooms[roomId]['message'].push(message);
+		state.rooms[roomId]['messages'].push(message);
 		let activeKey = roomId;
 		if (state.activeKey) activeKey = state.activeKey;
 		return { ...state, activeKey };

@@ -11,6 +11,14 @@ import { ip, port, chat_port } from '../../constants';
 
 const chatActions = new ChatActions();
 
+const getObjectFirstKey = function(obj) {
+  if (!obj || 'object' !== typeof obj) return false;
+  for (let o in obj) {
+    return o;
+  }
+  return false;
+}
+
 let reconnection_times = 0;
 class Chat extends Component {
 
@@ -85,7 +93,7 @@ class Chat extends Component {
       socket: undefined,
 			showType: constants.showType.HIDE,
       show,
-			activeKey: 'roomId',
+			activeKey: getObjectFirstKey(rooms),
       current,
 			rooms,
 			connectionState: constants.connectionState.NOT_CONNECTED,
